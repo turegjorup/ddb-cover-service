@@ -86,7 +86,7 @@ spec:
             memory: "256Mi"
             cpu: "300m"
           limits:
-            memory: "384Mi"
+            memory: "512Mi"
             cpu: "500m"
         readinessProbe:
           exec:
@@ -152,6 +152,11 @@ spec:
               secretKeyRef:
                 name: cover-service-secret
                 key: APP_ELASTIC_PASSWORD
+          - name: PHP_NEWRELIC_LICENSE_KEY
+            valueFrom:
+              secretKeyRef:
+                name: cover-service-secret
+                key: PHP_NEWRELIC_LICENSE_KEY
         envFrom:
           - configMapRef:
               name: cover-service-config
