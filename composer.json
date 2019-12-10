@@ -18,7 +18,7 @@
         "eightpoints/guzzle-bundle": "^7.4",
         "enqueue/enqueue-bundle": "^0.8.42",
         "enqueue/redis": "^0.8.42",
-        "friendsofsymfony/elastica-bundle": "^5.0",
+        "friendsofsymfony/elastica-bundle": "dev-v5.1.1-fix-pager",
         "guzzlehttp/guzzle": "^6.3",
         "karriere/json-decoder": "^2.1",
         "league/flysystem-ziparchive": "^1.0",
@@ -77,6 +77,12 @@
         "symfony/polyfill-php71": "*",
         "symfony/polyfill-php70": "*",
         "symfony/polyfill-php56": "*"
+    },
+    "repositories": {
+        "friendsofsymfony/elastica-bundle": {
+            "type": "vcs",
+            "url": "https://github.com/tuj/FOSElasticaBundle"
+        }
     },
     "scripts": {
         "auto-scripts": {

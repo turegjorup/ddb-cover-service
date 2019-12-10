@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1b062a0fec8b0d987515257a1e9ecb74",
+    "content-hash": "ac42e727d1f1e15fdb85d241ff0fe2ea",
     "packages": [
         {
             "name": "api-platform/api-pack",
@@ -1949,16 +1949,16 @@
         },
         {
             "name": "friendsofsymfony/elastica-bundle",
-            "version": "v5.1.1",
+            "version": "dev-v5.1.1-fix-pager",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FriendsOfSymfony/FOSElasticaBundle.git",
-                "reference": "e79828ed011464b43e227503c8b1f983ea3c2855"
+                "url": "https://github.com/tuj/FOSElasticaBundle.git",
+                "reference": "53db61b70acd457aca7632f00fbec6d581c4b281"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSElasticaBundle/zipball/e79828ed011464b43e227503c8b1f983ea3c2855",
-                "reference": "e79828ed011464b43e227503c8b1f983ea3c2855",
+                "url": "https://api.github.com/repos/tuj/FOSElasticaBundle/zipball/53db61b70acd457aca7632f00fbec6d581c4b281",
+                "reference": "53db61b70acd457aca7632f00fbec6d581c4b281",
                 "shasum": ""
             },
             "require": {
@@ -2001,7 +2001,11 @@
                     "FOS\\ElasticaBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "FOS\\ElasticaBundle\\Tests\\": "tests/"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -2032,7 +2036,10 @@
                 "mongodb",
                 "search"
             ],
-            "time": "2019-08-23T17:24:33+00:00"
+            "support": {
+                "source": "https://github.com/tuj/FOSElasticaBundle/tree/v5.1.1-fix-pager"
+            },
+            "time": "2019-12-10T07:42:51+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -9685,6 +9692,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "friendsofsymfony/elastica-bundle": 20,
         "behat/mink": 20
     },
     "prefer-stable": false,
