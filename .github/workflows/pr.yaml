@@ -109,7 +109,7 @@ jobs:
             - name: Install Dependencies
               run: composer install -q --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
 
-            # Testing tmate
+            # Testing tmate 2
 
             - name: Setup tmate session
               uses: mxschmitt/action-tmate@v2
