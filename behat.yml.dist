@@ -19,3 +19,9 @@ default:
                     symfony: ~
         BehatLocalCodeCoverage\LocalCodeCoverageExtension:
             target_directory: '%paths.base%/coverage'
+
+github_actions:
+    extensions:
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                environment: 'github_actions'
